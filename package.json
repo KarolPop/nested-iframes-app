@@ -1,0 +1,23 @@
+{
+  "name": "test-iframe-app",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "sos applet start --applet-dir . --project-dir . --entry-file-path index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@signageos/front-applet": "^4.0.0-beta.11",
+    "@signageos/front-display": "^7.1.1",
+    "@signageos/webpack-plugin": "0.0.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
