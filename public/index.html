@@ -4,43 +4,14 @@
     
     <p id="index">Loading.......</p>
     <iframe id="iframe" style="border: 0; position: absolute; display: none; width: 100%; height: 100%; left: 0; top: 0"></iframe>
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous">
-    </script>
     <script type="text/javascript">
-        jQuery(document).ready(function(){
-            
-            {
-
-            jQuery('#iframe').attr('src','iframe1.html');
-            jQuery('#iframe').show();
+        document.addEventListener("DOMContentLoaded", function(){
+            setTimeout(function() {
+                var iframe = document.getElementById('iframe');
+                iframe.getAttribute('src', 'iframe1.html');
+                iframe.style.display = 'block';
             5000});
-        });	
-
-    //     jQuery(document).ready(function(){
-    //     setTimeout(function()
-    //     {
-        
-    //     jQuery('#iframe').attr('src','iframe1.html');
-    //     jQuery('#iframe').show();
-    //     setTimeout(function()
-    //         {
-            
-    //         jQuery('#iframe').attr('src','iframe2.html');
-    //         setTimeout(function()
-    //             {    
-    //             jQuery('#iframe').attr('src','iframe3.html');
-    //             }, 
-    //                     5000);
-    //             }, 
-    //             5000);
-    //         }, 
-    //     5000);
-    // });
+        }); 
     </script>
     </body>
 </html>
